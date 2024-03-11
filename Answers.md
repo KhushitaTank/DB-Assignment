@@ -7,4 +7,5 @@ Detail Explanation.
 
 # 2.  How could you ensure that each product in the "Product" table has a valid category assigned to it?
 There are several ways to do this. One of the ways follows.
+
 Foreign Key Constraint: To achieve the most reliable and common approach, it's best to define a FOREIGN KEY constraint on the 'category_id' column of the 'Product' table. This constraint would reference the primary key ("id") of the "Product_Category" table. This enforces data integrity at the database level, preventing products from being inserted with invalid category IDs.
